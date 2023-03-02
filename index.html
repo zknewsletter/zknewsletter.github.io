@@ -5,30 +5,206 @@
         <title>ZKNewsletter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
             .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
                 display: grid;
-                /* background-color: blueviolet; */
                 justify-content: center;
+                grid-template-columns: min(100vw, 728px);
                 grid-template-rows: auto;
                 grid-template-areas:
+                    "header"
                     "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
             }
 
             .substack-frame {
                 grid-area: frame-item;
-                /* border:1px solid #EEE; */
+                justify-self: stretch;
                 background:white;
-                width: min(100vw, 400px);
-                /* height: 60pt; */
-                height: 400pt;
-                /* align-self: center; */
-                /* justify-self: center; */
+                height: 100pt;
             }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
         </style>
     </head>
     <body>
         <div class="container">
+            <div class="header">
+                <h1>ZK Newsletter</h1>
+                <p>Summary of the most important things, which happened in Zero Knowledge world, in the previous week.</p>
+            </div>
             <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2023/03/01</h1>
+                <img src="issues/2023-03-01-cover.jpg"></img>
+            </div>
+            
+            <div class="post-content">
+                <h3 id='new_articles'>New articles</h3>
+
+                <ul>
+                <li><a href='https://changehero.medium.com/zkevm-explained-what-it-is-and-why-it-matters-dcb80f9c6b39'>zkEVM Explained. What It Is and Why It Matters</a> - article by ChangeHero. (22.02.2023)</li>
+
+                <li><a href='https://medium.com/@geniidata/zero-knowledge-proofs-unlocking-the-potential-of-blockchain-technology-9d5a3718ddcb'>Zero Knowledge Proofs: Unlocking the Potential of Blockchain Technology</a> - article by GeniiData. (22.02.2023)</li>
+
+                <li><a href='https://medium.com/a41-ventures/rollup-series-part-1-scroll-the-dream-of-a-native-zkevm-d02a7d1bd45c'>[Rollup Series] Part 1: Scroll, the Dream of a Native zkEVM</a> - article by 100y. (24.02.2023)</li>
+
+                <li><a href='https://priyalwalpita.medium.com/what-is-zero-knowledge-proof-a-simple-explanation-c1e204493edf'>What is Zero Knowledge Proof? A simple explanation</a> - article by Piryal Walpita. (25.02.2023)</li>
+
+                <li><a href='https://medium.com/@frederickkang/firmly-bullish-on-ethereum-zkrollups-even-if-the-bear-market-bottom-is-not-yet-reached-6cd1d386d082'>Firmly bullish on Ethereum zkRollups, even if the bear market bottom is not yet reached</a> - article by Frederick Kang. (27.02.2023)</li>
+
+                <li><a href='https://medium.com/@foxtech123/what-is-the-sum-check-protocol-of-zero-knowledge-proof-994ea1dac651'>What is the Sum-Check Protocol of Zero Knowledge Proof</a> - article by FoxTech. (27.02.2023)</li>
+
+                <li><a href='https://medium.com/@strnad.eth/use-of-zk-snarks-inside-blockchain-infrastructure-daaef7a18551'>Use of zk-SNARKs inside Blockchain Infrastructure</a> - article by Jakub Strnad. (27.02.2023)</li>
+
+                <li><a href='https://medium.com/@iamagnix/zero-knowledge-proof-for-privacy-over-ethereum-permutations-over-lagrange-bases-for-oecumenical-dc7838e0bc8b'>Zero-Knowledge Proof for Privacy over Ethereum: Permutations over Lagrange-Bases for Oecumenical Non-Interactive Arguments of Knowledge (PLONK) [step-by-step] (Part 1)</a> - article by Agnish Gnosh. (27.02.2023)</li>
+
+                <li><a href='https://medium.com/@sanilshah1999/polygons-zero-knowledge-odyssey-part-5-b7d4ddac5158'>Polygon’s Zero Knowledge Odyssey Part V</a> - the 5th part of 6-part series of articles. (28.02.2023)</li>
+                </ul>
+
+                <h3 id='layer_2_projects'>Layer 2 projects</h3>
+
+                <ul>
+                <li><a href='https://twitter.com/arbitrum/status/1628410398058708992?s=20'>Arbitrum One processed more transactions than Ethereum</a>. (22.02.2023)</li>
+
+                <li><a href='https://blog.horizen.io/horizen-evm-eon-is-now-live-on-yuma-public-testnet/?utm_source=social&amp;utm_medium=social&amp;utm_campaign=Yuma'>Horizen EON is Now Live on Yuma Public Testnet – Horizen’s First Public EVM is Open for Testing</a>. (23.02.2023)</li>
+
+                <li><a href='https://dydx.foundation/blog/dydx-q1-community-town-hall'>dYdX Q1 Community Town Hall</a>. (24.02.2023)</li>
+
+                <li><a href='https://www.polygon.technology/blog/the-audit-upgraded-testnet-for-polygon-zkevm?utm_source=substack&amp;utm_medium=email'>The Audit-Upgraded Testnet for Polygon zkEVM</a>. (24.02.2023)</li>
+
+                <li><a href='https://polymerlabs.medium.com/zkmint-the-first-zk-friendly-tendermint-consensus-engine-116000b9d4f9'>zkMint: The First ZK-friendly Tendermint Consensus Engine</a>. (24.02.2023)</li>
+                </ul>
+
+                <h3 id='conferences'>Conferences</h3>
+
+                <ul>
+                <li><a href='https://cyber.biu.ac.il/event/the-13th-biu-winter-school-on-cryptography/'>The 13th BIU Winter School on cryptography</a> - course from 20-23 February 2023 in Bar-Ilan University, Israel. Slides are available on the page.</li>
+
+                <li><a href='https://www.ethdenver.com/'>ETHDenver 2023</a> - Ethereum event from February 24 to March 5, 2023.</li>
+                </ul>
+
+                <h3 id='youtube_clips'>YouTube Clips</h3>
+
+                <ul>
+                <li><a href='https://www.youtube.com/watch?v=WyT5KkKBJUw'>ZKP MOOC Lecture 6: Polynomial Commitments based on Pairing and Discrete Logarithm</a> - lecture by Yupeng Zhang. (22.02.2023)</li>
+
+                <li><a href='https://www.youtube.com/watch?v=guDz6B2dGGM'>Zero Knowledge Programming with TypeScript - Jack Servia | Mina zkApps | Devfolio</a> - lecture about SnarkyJS by Jack Servia. (22.02.2023)</li>
+
+                <li><a href='https://www.youtube.com/playlist?list=PLBJMt6zV1c7GeKkR2SUhzx9KSJ9TsEx6n'>Zero-knowledge proof composition and recursion (playlist)</a> - series about how proof composition and recursion work with different schemes by David Wong. (26.02.2023)</li>
+
+                <li><a href='https://www.youtube.com/watch?v=LKRAx19O1M8'>What Are Zero-Knowledge Rollups and How Do They Work</a> - simple explanation to the zkRollups. (26.02.2023)</li>
+
+                <li><a href='https://www.youtube.com/watch?v=D1btJADO3_g'>S21 // Tweet Size Zero-Knowledge Proof Blockchain by Brian McKenna</a>- presentation of the Head of Product of Mina Foundation. (27.02.2023)</li>
+                </ul>
+
+                <h3 id='twitter'>Twitter</h3>
+
+                <ul>
+                <li><a href='https://twitter.com/jbaylina/status/1629352597445394432'>Thread about some missunderstandings of how a zkRollup works</a>. (25.02.2023)</li>
+
+                <li><a href='https://twitter.com/odin_free/status/1629431642421854209/photo/1'>Starknet ecosystem map</a>. (25.02.2023)</li>
+
+                <li><a href='https://twitter.com/0xDino_/status/1630051886333042688'>Thread about a EigenLayer.</a> (27.02.2023)</li>
+
+                <li><a href='https://twitter.com/nuss_eli/status/1630632582554460165?t=-HzWm-9T7xEcvKbJfXStyw&amp;s=19'>Another thread about a EigenLayer.</a> (28.02.2023)</li>
+                </ul>
+
+                <h3 id='podcasts_and_other_talks'>Podcasts and other talks</h3>
+
+                <ul>
+                <li>Weekly <a href='https://zeroknowledge.fm/265-2/'>Zero Knowledge Podcast</a> episode - <em>Episode 265: Where ZK and ML intersect with Yi Sun and Daniel Kang.</em> (22.02.2023)</li>
+
+                <li>Weekly <a href='https://www.devsdosomething.fm/episodes/dcbuilder-eth-zero-knowledge-ml-and-becoming-a-web3-developer'>Devs Do Something</a> episode - <em>DCBuilder.eth - Zero Knowledge ML and Becoming a Web3 Developer</em>. (23.02.2023)</li>
+
+                <li><a href='https://twitter.com/zkLend/status/1628587952426086400'>PANONY Presents: The Zero-Knowledge Revolution, A Look Ahead to 2023</a>. (23.02.2023)</li>
+
+                <li><a href='https://twitter.com/arbitrum/status/1629178099555336195'>Arbitrum talk</a> - Arbitrum x zkHoldem. (24.02.2023)</li>
+
+                <li><a href='https://www.youtube.com/watch?v=UOOYiltdjm8'>Tasha Labs episode</a> -  How to Increase Staking Yields on Ethereum. (25.02.2023)</li>
+
+                <li><a href='https://open.spotify.com/episode/0rvz4Vbu0YookkCRzT9Dbh?si=e67487796d0b4d76'>Data Science episode</a> - <em>Prove It Without Revealing It: Exploring the Power of Zero-Knowledge Proofs in Data Science (Ep. 218)</em>. (27.02.2023)</li>
+                </ul>
+
+                <h3 id='upcoming_events'>Upcoming events</h3>
+
+                <ul>
+                <li><a href='https://zk-learning.org/'>Zero Knowledge Proofs</a> - course on Spring 2023, made by MOOC.</li>
+
+                <li><a href='https://web3digitalsummit.com/'>WEB3 digital summit</a> - Summit in April 2023 in Verona, Italy</li>
+
+                <li><a href='https://zkhack.dev/?utm_source=substack&amp;utm_medium=email'>ZK Hack</a> - ZK hackathon on March/April 2023 in Lisbon, Portugal.</li>
+
+                <li><a href='https://www.zksummit.com/'>zkSummit</a> - a summit on Zero Knowledge on April 2023 in Lisbon, Portugal.</li>
+
+                <li><a href='https://www.web3eurosummit.eu/'>European WEB3 summit 2023</a> - Summit in May 2023 in Brussels, Belgium</li>
+
+                <li><a href='https://twitter.com/RiscZero/status/1620058982672117766'>RISC Zero Study Club</a> - Series of zoom meetings with RISC Zero team explaining all things ZK - from 1st of February to 29th of March 2023.</li>
+
+                <li><a href='https://www.zprize.io/'>ZPrize comptetion</a> - applications can be send from 21st April until June 10th. The competition will begin on the 10th of June.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
         </div>
   </body>
 </html>
