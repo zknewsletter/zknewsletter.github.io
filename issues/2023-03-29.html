@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>ZKNewsletter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@odradev" />
+        <meta name="twitter:creator" content="@odradev" />
+        <meta property="og:url" content="https://zknewsletter.com" />
+        <meta property="og:title" content="ZK Newsletter for 2023/03/29" />
+        <meta property="og:description" content="Summary of the most important things, which happened in Zero Knowledge world, in the previous week." />
+        <meta property="og:image" content="https://zknewsletter.com/issues/2023-03-20-cover.png" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
+            .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: min(100vw, 728px);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
+            }
+
+            .substack-frame {
+                grid-area: frame-item;
+                justify-self: stretch;
+                background:white;
+                height: 100pt;
+            }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>ZK Newsletter</h1>
+                <p>Summary of the most important things, which happened in Zero Knowledge world, in the previous week.</p>
+            </div>
+            <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2023/03/29</h1>
+                <img src="issues/2023-03-29-cover.png"></img>
+            </div>
+            
+            <div class="post-content">
+                <h3 id='new_articles'>New articles</h3>
+                    <ul>
+                    <li><a href='https://www.qredo.com/blog/qredo-101s-just-what-exactly-is-a-zero-knowledge-proof'>Qredo 101s: Just What Exactly Is a Zero-Knowledge Proof?</a> - article by QredoTeam. (15.03.2023)</li>
+
+                    <li><a href='https://medium.com/alliancedao/how-to-leverage-zkps-as-a-web3-builder-ae504783973d'>How to Leverage ZKPs as a Web3 Builder</a> - article by Mohamed Fouda. (22.03.2023)</li>
+
+                    <li><a href='https://medium.com/@kido.kim/throne-of-zk-snark-vs-stark-e449984d5c36'>Throne of ZK: SNARK vs STARK</a> - article by Kido Kim. (23.03.2023)</li>
+
+                    <li><a href='https://blog.pontem.network/zero-knowledge-101-fc7476e984c3'>Zero Knowledge 101</a> and <a href='https://blog.pontem.network/zero-knowledge-201-16864126768d'>201</a> - articles by Pontem Network. (24.03.2023)</li>
+
+                    <li><a href='https://medium.com/@ashwin.yar/what-is-zkevm-things-you-need-to-know-about-the-future-of-dapps-bits-by-blocks-378d272fa48'>What is zkEVM: Things You Need to Know About The Future of Dapps — Bits By Blocks</a> - article by Ashwin Yardi. (25.03.2023)</li>
+
+                    <li><a href='https://medium.com/@henrydj9060/top-6-zkevm-projects-the-key-to-ethereums-scalable-future-baa7317f2cec'>Top 6 zkEVM Projects: The Key to Ethereum’s Scalable Future</a> - article by Henry DJ. (25.03.2023)</li>
+
+                    <li><a href='https://medium.com/leclevietnam/what-is-zk-rollup-advantages-limitations-of-zk-rollup-and-prominent-projects-5883872cbc71'>What is ZK Rollup? Advantages, limitations of Zk Rollup and prominent projects</a> - article by Optimus Finance. (27.03.2023)</li>
+
+                    <li><a href='https://cointelegraph.com/news/zero-knowledge-proofs-coming-to-bitcoin-overhauling-network-state-validation'>Zero-knowledge proofs coming to Bitcoin, overhauling network state validation</a> - news by Gareth Jenkinson. (28.03.2023)</li>
+                    </ul>
+
+                    <h3 id='zk_projects'>ZK projects</h3>
+
+                    <ul>
+                    <li><a href='https://mirror.xyz/hyperoracleblog.eth/qbefsToFgFxBZBocwlkX-HXbpeUzZiv2UB5CmxcaFTM'>Hyper Oracle: A Programmable zkOracle Network</a>. (14.03.2023)</li>
+
+                    <li><a href='https://www.qredo.com/blog/qredo-labs-home-of-our-big-bold-bets'>Qredo Labs: Home of Our Big Bold Bets</a>. (20.03.2023)</li>
+
+                    <li><a href='https://medium.com/aztec-protocol/zero-knowledge-gaming-with-battlezips-x-noir-50b046c158b3'>Aztec - Zero-knowledge gaming with BattleZips x Noir</a>. (22.03.2023)</li>
+
+                    <li><a href='https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU'>Taiko Alpha-2 Testnet is Live</a>. (22.03.2023)</li>
+
+                    <li><a href='https://www.risczero.com/blog/waldo'>Where&#8217;s Waldo on RISC Zero</a>. (22.03.2023)</li>
+
+                    <li><a href='https://github.com/MinaProtocol/mina/discussions/12905'>Mina Protocol - Berkeley release 68fa3fa is now ready to test on the Berkeley testnet</a>. (23.03.2023)</li>
+
+                    <li><a href='https://minaprotocol.com/blog/what-are-zkoracles'>Mina Protocol - What are zkOracles?</a> (23.03.2023)</li>
+
+                    <li><a href='https://polygon.technology/blog/zkmeta-to-build-a-dedicated-gaming-rollup-on-polygon'>zkMeta to Build a Dedicated Gaming Rollup on Polygon</a>. (23.03.2023)</li>
+
+                    <li><a href='https://blog.matter-labs.io/gm-zkevm-171b12a26b36'>zkSync Era Mainnet is now open to all</a>. (24.03.2023)</li>
+
+                    <li><a href='https://polygon.technology/blog/bug-bounty-for-polygon-zkevm'>Bug Bounty for Polygon zkEVM</a>. (24.03.2023)</li>
+
+                    <li><a href='https://medium.com/@javrela/understanding-the-importance-of-todays-launch-of-the-first-ever-zkevm-85a021087d70'>Understanding the importance of today’s launch of the first-ever zkEVM (zkSync)</a>. (24.03.2023)</li>
+
+                    <li><a href='https://dydx.exchange/blog/v4-milestone-3-is-complete'>dYdX - V4 Milestone 3 is Complete</a>. (27.03.2023)</li>
+
+                    <li><a href='https://polygon.technology/blog/polygon-zkevm-is-now-fully-open-source'>Polygon zkEVM Is Now Fully Open-Source.</a> (27.03.2023)</li>
+                    </ul>
+
+                    <h3 id='twitter'>Twitter</h3>
+
+                    <ul>
+                    <li><a href='https://twitter.com/Suci_Community/status/1638336435148427264'>What is zkWASM Arithmetization</a>. (22.03.2023)</li>
+
+                    <li><a href='https://twitter.com/zksync/status/1639251197898129408/'>Thread explaining zkSync Era Mainnet Alpha</a>. (24.03.2023)</li>
+
+                    <li><a href='https://twitter.com/MikkoIkola/status/1639343731882209280'>Thread about Taiko A2 test</a>. (24.03.2023)</li>
+
+                    <li><a href='https://twitter.com/taikoxyz/status/1640408281826091008'>Total anarchy of Rollups</a>. (27.03.2023)</li>
+
+                    <li><a href='https://twitter.com/HyperOracle/status/1640231473625333760'>Differences between zkOracles and traditional Oracles</a>. (29.03.2023)</li>
+                    </ul>
+
+                    <h3 id='youtube_clips'>YouTube Clips</h3>
+
+                    <ul>
+                    <li><a href='https://www.youtube.com/watch?v=0LW-qeVe6QI'>ZKP MOOC Lecture 10: Recursive SNARKs</a> - lecture by Dan Boneh. (22.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=olbSeX8SKI4'>How to Bridge Funds to Polygon zkEVM Mainnet Beta</a> - quick tutorial to Polygon zkEVM. (22.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=kHT6uOX3jto'>zkOracle, zkWASM &amp; Programmability: a deep dive into Hyper Oracle&#8217;s tech stack</a> - tecording from zkDay Denver. (23.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=5ufjMI_9gNs'>Deploy existing Ethereum smart contracts to Polygon zkEVM in less than 4 minutes</a> - quick tutorial to Polygon zkEVM. (24.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=0ke2MTBcZTs'>zkSync: Layer 2 zkEVM is HERE! What it means for Ethereum!</a> - explanation of layer 2 zkEVM technology by VirtualBacon. (24.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=KVJWBk0wNSE'>SnarkyJS: Recursive ZK Proofs in Typescript</a> - recording from ZKP/Web3 Hackathon. (24.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=el8AS32SMj4'>Polygon ZK Day 2.0 Summit</a> - summit from Polygon. (27.03.2023)</li>
+                    </ul>
+
+                    <h3 id='podcasts_and_other_talks'>Podcasts and other talks</h3>
+
+                    <ul>
+                    <li>Weekly <a href='https://zeroknowledge.fm/269-2/'>Zero Knowledge Podcast</a> episode - <em>Episode 269: Auctions with Kshitij Kulkarni, Matheus V. X. Ferreira and Tarun</em> (22.03.2023)</li>
+
+                    <li><a href='https://twitter.com/ether_fi/status/1638970344240185344'>Eigenlayer, ether.fi and Obol Labs: Shanghai, DVT and Liquid Staking</a>. (23.03.2023)</li>
+
+                    <li><a href='https://www.youtube.com/watch?v=oF5aXocuDuc'>zkSync Era Mainnet Launch &amp; NEW zkEVM with Alex Gluchowski and Anthony Rose</a>. (24.03.2023)</li>
+
+                    <li><a href='https://twitter.com/zksync/status/1639276971220688896'>zkSync Era Twitter Spaces</a>. (24.03.2023)</li>
+                    </ul>
+
+                    <h3 id='upcoming_events'>Upcoming events</h3>
+
+                    <ul>
+                    <li><a href='https://zk-learning.org/'>Zero Knowledge Proofs</a> - course on Spring 2023, made by MOOC.</li>
+
+                    <li><a href='https://zkhack.dev/?utm_source=substack&amp;utm_medium=email'>ZK Hack</a> - ZK hackathon on March/April 2023 in Lisbon, Portugal.</li>
+
+                    <li><a href='https://www.zksummit.com/'>zkSummit</a> - a summit on Zero Knowledge on April 2023 in Lisbon, Portugal.</li>
+
+                    <li><a href='https://web3digitalsummit.com/'>WEB3 digital summit</a> - Summit in April 2023 in Verona, Italy</li>
+
+                    <li><a href='https://www.web3eurosummit.eu/'>European WEB3 summit 2023</a> - Summit in May 2023 in Brussels, Belgium</li>
+
+                    <li><a href='https://www.ethcc.io/'>The Ethereum Community Conference 2023</a> - conference on July 2023 in Paris, France.</li>
+
+                    <li><a href='https://polygon.technology/blog/polygon-labs-announces-devx-global-tour'>DevX Global Tour</a> - Regional Hackathons and Guild Events by Polygon since March 2023 until December 2023.</li>
+                    </ul>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
+        </div>
+  </body>
+</html>
