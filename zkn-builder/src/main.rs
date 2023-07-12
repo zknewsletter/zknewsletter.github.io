@@ -65,6 +65,7 @@ const TEMPLATE: &str = r#"
     <head>
         <meta charset="utf-8" />
         <title>ZKNewsletter</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Twitter -->
@@ -118,6 +119,10 @@ const TEMPLATE: &str = r#"
                 font-size: 20pt;
             }
 
+            .header img {
+                max-width: 100%;
+            }
+
             .substack-frame {
                 grid-area: frame-item;
                 justify-self: stretch;
@@ -160,7 +165,7 @@ const TEMPLATE: &str = r#"
     <body>
         <div class="container">
             <div class="header">
-                <h1>ZK Newsletter</h1>
+                <img src="/full_logo.png"></img>
                 <p>Summary of the most important things, which happened in Zero Knowledge world, in the previous week.</p>
             </div>
             <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
