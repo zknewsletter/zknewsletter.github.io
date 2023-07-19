@@ -166,7 +166,7 @@ const TEMPLATE: &str = r#"
         <div class="container">
             <div class="header">
                 <img src="/full_logo.png"></img>
-                <p>Summary of the most important things, which happened in Zero Knowledge world, in the previous week.</p>
+                <p>Stay in the loop with our Zero Knowledge Newsletter - Your weekly roundup of the latest news, developments, breakthroughs, and innovations in the world of zero knowledge.</p>
             </div>
             <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
             <div class="post-header">
