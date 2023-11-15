@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>ZKNewsletter</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@odradev" />
+        <meta name="twitter:creator" content="@odradev" />
+        <meta property="og:url" content="https://zknewsletter.com" />
+        <meta property="og:title" content="ZK Newsletter for 2023/11/15" />
+        <meta property="og:description" content="Summary of the most important things, which happened in Zero Knowledge world, in the previous week." />
+        <meta property="og:image" content="https://zknewsletter.com/issues/2023-11-15-cover.png" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
+            .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: min(100vw, 728px);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
+            }
+
+            .header img {
+                max-width: 100%;
+            }
+
+            .substack-frame {
+                grid-area: frame-item;
+                justify-self: stretch;
+                background:white;
+                height: 100pt;
+            }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="/full_logo.png"></img>
+                <p>Stay in the loop with our Zero Knowledge Newsletter - Your weekly roundup of the latest news, developments, breakthroughs, and innovations in the world of zero knowledge.</p>
+            </div>
+            <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2023/11/15</h1>
+                <img src="/issues/2023-11-15-cover.png"></img>
+            </div>
+            
+            <div class="post-content">
+                <h3 id='top_picks'>Top picks</h3>
+
+<ul>
+<li><a href='https://polygon.technology/blog/polygon-labs-and-near-foundation-collaborate-to-build-a-zkwasm-prover-as-a-component-for-polygon-cdk'>Polygon Labs and NEAR Foundation Collaborate to Build a zkWasm L2 Prover as a Component for Polygon CDK</a>. (08.11.2023)</li>
+
+<li><a href='https://eprint.iacr.org/2023/1759.pdf'>Non-Interactive Zero-Knowledge Functional Proofs</a> - academic text by Gongxian Zeng, Junzuo Lai, Zhengan Huang, Linru Zhang, Xiangning Wang, Kwok-Yan Lam, Huaxiong Wang and Jian Weng. (14.11.2023)</li>
+
+<li><a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part-2-ee00d6accb4d'>Under the hood of zkSNARKs — PLONK protocol: Part 2</a>, <a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part3-821855e49ce6'>part 3</a> and <a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part4-5e74bddebedb'>part 4</a> - article by Crypto Fairy. (14.11.2023)</li>
+</ul>
+
+<h3 id='new_articles'>New articles</h3>
+
+<ul>
+<li><a href='https://blog.icme.io/secure-and-compliant-ai-the-role-of-zero-knowledge-proofs/'>How Zero Knowledge Proofs Make AI Secure, Compliant, and Privacy Preserving</a> - article by Houman Shadab. (08.11.2023)</li>
+
+<li><a href='https://hackernoon.com/enhancing-blockchain-based-identity-management-with-zero-knowledge-proofs'>Enhancing Blockchain-Based Identity Management with Zero-Knowledge Proofs</a> - article by Hasan Yildiz. (08.11.2023)</li>
+
+<li><a href='https://hackernoon.com/unveiling-the-intricacies-of-zero-knowledge-proofs-and-their-varied-implementations'>Unveiling the Intricacies of Zero-Knowledge Proofs and Their Varied Implementations</a> - article by Stanley Sajere. (10.11.2023)</li>
+
+<li><a href='https://taiko.mirror.xyz/O0vgGjQpg3oLYNXTFty1NxBVpQfITcX818vBEP6Bn60'>ZK-Roller-Coaster #16</a> - biweekly update on ZK world. (10.11.2023)</li>
+
+<li><a href='https://medium.com/@bngjly/zkwasm-the-bridge-connecting-web-3-0-and-web-2-0-5f41f2f6eb19'>zkWasm, the bridge connecting Web 3.0 and Web 2.0</a> - article by Putin Liu. (10.11.2023)</li>
+
+<li><a href='https://faun.pub/secrets-of-zero-knowledge-proofs-aadb0ec7c6db'>Secrets of Zero-Knowledge Proofs</a> - article by Solidity Academy. (11.11.2023)</li>
+
+<li><a href='https://eprint.iacr.org/2023/1749.pdf'>Dora: Processor Expressiveness is (Nearly) Free in Zero-Knowledge for RAM Programs</a> - academic text by Aarushi Goel, Mathias Hall-Andersen and Gabriel Kaptchuk. (13.11.2023)</li>
+
+<li><a href='https://medium.com/@hira.siddiqui/from-zero-to-hero-in-zero-knowledge-proofs-part-1-bacc3f256980'>From Zero to Hero in Zero Knowledge Proofs [Part 1]</a> - article by Hira Siddiqui. (13.11.2023)</li>
+
+<li><a href='https://medium.com/@jonas_casper/merkle-trees-and-rollup-systems-933bcf13a6ea'>Merkle Trees and Rollup systems</a> - article by Jonas Pauli. (13.11.2023)</li>
+
+<li><a href='https://medium.com/@tatianarevoredo/zkml-the-convergence-of-ai-blockchain-and-cryptography-213a4775adb0'>ZKML: the convergence of AI, Blockchain and Cryptography</a> - article by Tatiana Revoredo. (13.11.2023)</li>
+
+<li><a href='https://hackernoon.com/the-rise-of-zero-knowledge-rollups-in-ethereum-scaling'>The Rise of Zero-Knowledge Rollups in Ethereum Scaling</a> - article by Marie Poteriaieva. (14.11.2023)</li>
+
+<li><a href='https://perfect-amphibian-929.notion.site/Advancing-Towards-ZK-Fraud-Proof-zkGo-Compiling-L2-Geth-into-ZK-Compatible-Wasm-315a878af5754c549e5003568e1ee124'>Advancing Towards ZK Fraud Proof - zkGo: Compiling L2 Geth into ZK-Compatible Wasm</a> - article by Qi Zhou. (14.11.2023)</li>
+
+<li><a href='https://eprint.iacr.org/2023/1759.pdf'>Non-Interactive Zero-Knowledge Functional Proofs</a> - academic text by Gongxian Zeng, Junzuo Lai, Zhengan Huang, Linru Zhang, Xiangning Wang, Kwok-Yan Lam, Huaxiong Wang and Jian Weng. (14.11.2023)</li>
+
+<li><a href='['>Enhancing Open Banking with Zero Knowledge Proofs: A Technical Exploration</a>](https://hackernoon.com/enhancing-open-banking-with-zero-knowledge-proofs-a-technical-exploration) - article by Mickey Multani. (14.11.2023)</li>
+
+<li><a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part-2-ee00d6accb4d'>Under the hood of zkSNARKs — PLONK protocol: Part 2</a>, <a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part3-821855e49ce6'>part 3</a> and <a href='https://medium.com/@cryptofairy/under-the-hood-of-zksnarks-plonk-protocol-part4-5e74bddebedb'>part 4</a> - article by Crypto Fairy. (14.11.2023)</li>
+</ul>
+
+<h3 id='zk_projects'>ZK projects</h3>
+
+<ul>
+<li><a href='https://polygon.technology/blog/polygon-labs-and-near-foundation-collaborate-to-build-a-zkwasm-prover-as-a-component-for-polygon-cdk'>Polygon Labs and NEAR Foundation Collaborate to Build a zkWasm L2 Prover as a Component for Polygon CDK</a>. (08.11.2023)</li>
+
+<li><a href='https://mirror.xyz/hyperoracleblog.eth/iXLTbbggNTtLWqPB695IvJQo2DtgooEbvYVVuFVY6y8'>Marine: Compound Liquidation Keeper with zkGraph</a>. (08.11.2023)</li>
+
+<li><a href='https://www.risczero.com/news/bonsai-pay'>Risc Zero - Bridging Web2 and Web3 with Bonsai Pay: A Bonsai-powered Demo Application</a>. (09.11.2023)</li>
+
+<li><a href='https://www.risczero.com/news/open-source'>Doubling Down on Open Source at RISC Zero</a>. (09.11.2023)</li>
+
+<li><a href='https://twitter.com/Scroll_ZKP/status/1723104010595692545'>Scroll - Mainnet Weekly Update</a>. (10.11.2023)</li>
+
+<li><a href='https://medium.com/@vendetta01/cairo-language-and-starknet-an-innovative-collaboration-e35ccfac04df'>Cairo Language and StarkNet: An Innovative Collaboration</a>. (12.11.2023)</li>
+
+<li><a href='https://minaprotocol.com/blog/re-launching-the-mina-ecosystem-bug-bounty-program'>Re-Launching the Mina Ecosystem Bug Bounty Program</a>. (13.11.2023)</li>
+
+<li><a href='https://taiko.mirror.xyz/anPjF35Mrc_xzYgOTbUmfjr_MlhE3L8ZBZIxqmz9GZ8'>Based Booster Rollup (BBR): A new major milestone in Taiko’s roadmap</a>. (14.11.2023)</li>
+
+<li><a href='https://medium.com/@pascalabams1/scroll-a-comprehensive-guide-to-the-new-zk-evm-34ba744cad1f'>Scroll: A Comprehensive Guide to the New ZK-EVM</a>. (14.11.2023)</li>
+</ul>
+
+<h3 id='mpc'>MPC</h3>
+
+<ul>
+<li><a href='https://eprint.iacr.org/2023/1729.pdf'>CompactTag: Minimizing Computation Overheads in Actively-Secure MPC for Deep Neural Networks</a> - academic text by Yongqin Wang, Pratik Sarkar, Nishat Koti, Arpita Patra and Murali Annavaram. (13.11.2023)</li>
+
+<li><a href='https://eprint.iacr.org/2023/1739.pdf'>Broadcast-Optimal Four-Round MPC in the Plain Model</a> - academic text by Michele Ciampi, Ivan Damgård, Divya Ravi, Luisa Siniscalchi, Yu Xia and Sophia Yakoubov. (13.11.2023)</li>
+</ul>
+
+<h3 id='conferences'>Conferences</h3>
+
+<ul>
+<li><a href='https://lu.ma/r0kh0pgp'>Zeroing in on Blockchain: A Tech Talk with RISC Zero</a> - meetup on 9th of November 2023 in Seattle, USA.</li>
+
+<li><a href='https://www.zkistanbul.com/'>ZK Hack Istanbul</a> - hackathon on November 2023 in Istanbul, Türkiye.</li>
+
+<li><a href='https://devconnect.org/'>Devconnect 2023</a> - conference on November 2023 in Istanbul, Türkiye.</li>
+</ul>
+
+<h3 id='twitter'>Twitter</h3>
+
+<ul>
+<li><a href='https://twitter.com/bitsplaining/status/1723779376494395587'>Layer 2 Landscape #70</a>. (12.11.2023)</li>
+
+<li><a href='https://twitter.com/HoumanShadab/status/1723740091149938735'>Thread about building a zero knowledge proof tech stack</a>. (12.11.2023)</li>
+</ul>
+
+<h3 id='youtube_clips'>YouTube Clips</h3>
+
+<ul>
+<li><a href='https://www.youtube.com/watch?v=MckieUBpakw'>zkVM Guest Optimization Tips and Tricks (RISC Zero Study Club)</a> - workshop by Victor Graf. (08.11.2023)</li>
+
+<li><a href='https://www.youtube.com/watch?v=kpkNeTXJmhc'>Dylan Kugler - Adopting Zero-Knowledge Proofs</a> - presentation by Dylan Kugler. (13.11.2023)</li>
+</ul>
+
+<h3 id='podcasts_and_other_talks'>Podcasts and other talks</h3>
+
+<ul>
+<li>Weekly <a href='https://zeroknowledge.fm/298-2/'>Zero Knowledge Podcast</a> episode - <em>Episode 298: Mina’s zkApps and o1js with Brandon and Steve</em>. (08.11.2023)</li>
+
+<li><a href='https://twitter.com/EFDevconnect/status/1722152791139914127'>What is Zupass? Why does ZK-tech matter? And how you can integrate it!</a>. (08.11.2023)</li>
+
+<li><a href='https://www.youtube.com/watch?v=TmSOC8FN2GE'>The Amazing Sumcheck Protocol&quot; by Jonathan Bootle</a> - presentation by Jonathan Bootle. (10.11.2023)</li>
+
+<li><a href='https://www.youtube.com/watch?v=AMoYDktz510'>Epicenter Podcast</a> episode - <em>Charles d&#8217;Haussy: dYdX V4 - Decentralised Perpetual Exchange on a Cosmos Appchain. Ep. 521</em>. (10.11.2023)</li>
+</ul>
+
+<h3 id='upcoming_events'>Upcoming events</h3>
+
+<ul>
+<li><a href='https://longhashventures.typeform.com/ZKCohort?typeform-source=t.co'>LongHashX Accelerator Cohort 11 - ZK Cohort</a> - applications can still be send. Final decisions will be announced in October. More informaion <a href='https://www.longhash.vc/accelerator/zk-accelerator/'>here.</a></li>
+
+<li><a href='https://hackernoon.com/the-zero-knowledge-proofs-writing-contest-by-rareskills'>The Zero Knowledge Proofs Writing Contest by RareSkills</a> - contest by RareSkills on November 2023.</li>
+
+<li><a href='https://ethglobal.com/events/istanbul'>ETHGlobal Istanbul</a> - summit on November 2023 in Istanbul, Türkiye.</li>
+
+<li><a href='https://tcc.iacr.org/2023/'>TCC 2023</a> - conference on November/December 2023 in Taipei, Taiwan.</li>
+
+<li><a href='https://www.worldblockchainsummit.com/events/bkk-dec-23'>World Blockchain Summit 2023</a> - summit on December 2023 in Bangkok, Thailand.</li>
+
+<li><a href='https://polygon.technology/blog/polygon-labs-announces-devx-global-tour'>DevX Global Tour</a> - Regional Hackathons and Guild Events by Polygon since March 2023 until December 2023.</li>
+
+<li><a href='https://devcon.org/'>DevCon 2024</a> - Devcon for new Ethereum explorers in South East Asia, 2024.</li>
+</ul>
+
+<h3 id='our_sponsors'>Our Sponsors</h3>
+
+<ul>
+<li><strong><a href='https://odra.dev'>Odra.dev</a></strong> - cutting-edge smart contract development tools for professionals with deadlines.</li>
+</ul>
+
+                <p>Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
+        </div>
+  </body>
+</html>
