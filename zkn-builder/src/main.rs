@@ -176,7 +176,7 @@ const TEMPLATE: &str = r#"
             
             <div class="post-content">
                 {{POST_CONTENT}}
-                <p>Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
+                <p>To become a sponsor mail us: contact@odra.dev. Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
             </div>
             <div class="footer">
                 <p>by <a href="https://odra.dev">odra.dev</a></p>
