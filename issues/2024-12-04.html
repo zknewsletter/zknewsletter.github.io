@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>ZKNewsletter</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@odradev" />
+        <meta name="twitter:creator" content="@odradev" />
+        <meta property="og:url" content="https://zknewsletter.com" />
+        <meta property="og:title" content="ZK Newsletter for 2024/12/04" />
+        <meta property="og:description" content="Summary of the most important things, which happened in Zero Knowledge world, in the previous week." />
+        <meta property="og:image" content="https://zknewsletter.com/issues/2024-12-04-cover.png" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
+            .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: min(100vw, 728px);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
+            }
+
+            .header img {
+                max-width: 100%;
+            }
+
+            .substack-frame {
+                grid-area: frame-item;
+                justify-self: stretch;
+                background:white;
+                height: 100pt;
+            }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="/full_logo.png"></img>
+                <p>Stay in the loop with our Zero Knowledge Newsletter - Your weekly roundup of the latest news, developments, breakthroughs, and innovations in the world of zero knowledge.</p>
+            </div>
+            <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2024/12/04</h1>
+                <img src="/issues/2024-12-04-cover.png"></img>
+            </div>
+            
+            <div class="post-content">
+                <p>If you like us are interested in how AI gets its way into software development, you might be interested in our new newsletter: <a href='https://codegen.substack.com/p/codegen-news-for-2024-12-02'>CodeGen New</a>.</p>
+
+<h3 id='top_picks'>Top picks</h3>
+
+<ul>
+<li><a href='https://www.youtube.com/watch?v=HPu_fSvjAV0'>Building with Plonky3 &amp; Plonky2 | Aggregation Summit 2024</a>. (27.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1930.pdf'>Algebraic Zero Knowledge Contingent Payment</a> - academic text by Javier Gomez-Martinez, Dimitrios Vasilopoulos, Pedro Moreno-Sanchez and Dario Fiore. (29.11.2024)</li>
+
+<li><a href='https://vitalik.eth.limo/general/2024/12/03/wallets.html'>What I would love to see in a wallet</a> - post by Vitalik Buterin. (03.12.2024)</li>
+</ul>
+
+<h3 id='reading_materials'>Reading materials</h3>
+
+<ul>
+<li><a href='https://hackernoon.com/zkps-and-quantum-computing-formidable-allies-for-lightyear-innovations'>ZKPs and Quantum Computing: Formidable Allies for Lightyear Innovations</a> - article by Samuel Bassey. (27.11.2024)</li>
+
+<li><a href='https://medium.com/@w.zhang/four-first-ever-zkp-verifications-on-bitcoin-9475df11d57e'>Four First-Ever ZKP Verifications on Bitcoin</a> - article by Wei Zhang. (28.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1929.pdf'>LightCROSS: A Secure and Memory Optimized Post-Quantum Digital Signature CROSS</a> - academic text by Puja Mondal, Suparna Kundu, Supriya Adhikary and Angshuman Karmakar. (29.11.2024)</li>
+
+<li><a href='https://medium.com/@thesonicsmith/creating-a-visualizer-for-scroll-c8cbe40874d9'>Creating a Visualizer For Scroll</a> - article by Nic Smith. (29.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1930.pdf'>Algebraic Zero Knowledge Contingent Payment</a> - academic text by Javier Gomez-Martinez, Dimitrios Vasilopoulos, Pedro Moreno-Sanchez and Dario Fiore. (29.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1932.pdf'>On Witness Encryption and Laconic Zero-Knowledge Arguments</a> - academic text by Yanyi Liu, Noam Mazor and Rafael Pass. (29.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1918.pdf'>Orion&#8217;s Ascent: Accelerating Hash-Based Zero Knowledge Proof on Hardware Platforms</a> - academic text by Florian Hirner, Florian Krieger, Constantin Piber and Sujoy Sinha Roy. (29.11.2024)</li>
+
+<li><a href='https://zkmesh.substack.com/p/zk-mesh-november-2024-recap'>zkMesh: November 2024 recap</a>. (30.11.2024)</li>
+
+<li><a href='https://medium.com/tx-fusion/zero-knowledge-proofs-on-bitcoin-10aed7995714'>Zero-Knowledge Proofs on Bitcoin: A Beginner’s Guide</a> - article by tx-fusionteam. (01.12.2024)</li>
+
+<li><a href='https://vitalik.eth.limo/general/2024/12/03/wallets.html'>What I would love to see in a wallet</a> - post by Vitalik Buterin. (03.12.2024)</li>
+</ul>
+
+<h3 id='watching_materials'>Watching materials</h3>
+
+<ul>
+<li><a href='https://www.youtube.com/watch?v=821tPE2Ceps'>ZK Whiteboard Sessions - S2M5: Small Fields, Binary Fields with Jim Posen</a>. (27.11.2024)</li>
+
+<li><a href='https://www.youtube.com/watch?v=HPu_fSvjAV0'>Building with Plonky3 &amp; Plonky2 | Aggregation Summit 2024</a>. (27.11.2024)</li>
+
+<li><a href='https://www.youtube.com/watch?v=o3ZADyKkpCY'>zkVM Design - ZK Hub Main Stage</a>. (27.11.2024)</li>
+
+<li><a href='https://www.youtube.com/watch?v=6nik_XwS_rM'>Building ZK App Chains with Mina - ETHGlobal Bangkok 2024</a>. (02.12.2024)</li>
+
+<li><a href='https://www.youtube.com/watch?v=ryK537KFulA'>ZK Hack V - Workshop: Integrating zkVerify into your dApp + Puzzle V-2</a>. (03.12.2024)</li>
+</ul>
+
+<h3 id='listening_materials'>Listening materials</h3>
+
+<ul>
+<li><a href='https://zeroknowledge.fm/345-2/'>Zero Knowledge Podcast</a> episode - <em>Episode 345: Latest ZK Research with Dan Boneh</em>. (27.11.2024)</li>
+
+<li><a href='https://www.youtube.com/watch?v=vw8gzBG0oCc'>Expansion Podcast</a> episode - <em>The Value of Verification and Rethinking Bitcoin&#8217;s Block Size War | Mustafa Al-Bassam, Celestia</em>. (29.11.2024)</li>
+
+<li>
+<p><a href='https://www.youtube.com/watch?v=RP1gQlE7yEE'>Max Resnick on Ethereum&#8217;s Roadmap, Economics, and Alignment Taxes</a>. (30.11.2024)</p>
+
+<h3 id='mpc'>MPC</h3>
+</li>
+
+<li><a href='https://eprint.iacr.org/2024/1919.pdf'>PASTA on Edge: Cryptoprocessor for Hybrid Homomorphic Encryption</a> - academic text by Aikata Aikata, Daniel Sanz Sobrino and Sujoy Sinha Roy. (29.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1921.pdf'>Downlink (T)FHE ciphertexts compression</a> - academic text by Antonina Bondarchuk, Olive Chakraborty, Geoffroy Couteau and Renaud Sirdey. (29.11.2024)</li>
+
+<li><a href='https://eprint.iacr.org/2024/1917.pdf'>Decentralized FHE Computer</a> - academic text by Gurgen Arakelov, Sergey Gomenyuk and Hovsep Papoyan. (30.11.2024)</li>
+
+<li>
+<p><a href='https://eprint.iacr.org/2024/1935.pdf'>RevoLUT : Rust Efficient Versatile Oblivious Look-Up-Tables</a> - academic text by Sofiane Azogagh, Zelma Aubin Birba, Marc-Olivier Killijian and Félix Larose-Gervais. (02.12.2024)</p>
+
+<h3 id='updates_of_zk_projects'>Updates of ZK projects</h3>
+</li>
+
+<li><a href='https://starkware.co/blog/implementing-a-bridge-covenant-on-op-cat-bitcoin/'>StarkWare - Implementing a Bridge Covenant on OP_CAT-Enabled Bitcoin: A Proof of Concept</a>. (28.11.2024)</li>
+
+<li><a href='https://medium.com/hyperlane/hyperlane-is-multiplayer-mode-for-blockchains-8a8a58cb85c6'>Hyperlane is Multiplayer Mode for Blockchains.</a> (29.11.2024)</li>
+
+<li><a href='https://dusk.network/news/dusk-updated-whitepaper/'>Dusk Updated Whitepaper</a>. (29.11.2024)</li>
+
+<li><a href='https://thegraph.com/blog/full-stack-dapp-on-base-tutorial/'>How to Build on Base with a Simple Coin Flip Game</a>. (29.11.2024)</li>
+
+<li><a href='https://aleo.org/post/new-snarkos-release-candidate-dec24/'>Aleo - New snarkOS release candidate: v3.1.0</a>. (01.12.2024)</li>
+
+<li><a href='https://zksync.mirror.xyz/XxZXs957Wf3PzsxuDR2LjR2FcqT0e6HpLcCdfsMKKyY'>ZKsync SSO: Developer Toolkit for Better User Experience</a>. (02.12.2024)</li>
+
+<li>
+<p><a href='https://scroll.io/blog/rho-markets-x-scroll'>Rho Markets: Scroll’s Liquidity Layer</a>. (03.12.2024)</p>
+
+<h3 id='current_events'>Current events</h3>
+</li>
+
+<li><a href='https://zkhack.dev/zkhackV/'>ZK Hack V</a> - a virtual event featuring workshops and advanced puzzle-solving competitions on November/December 2024.</li>
+
+<li><a href='https://tcc.iacr.org/2024/'>TCC 2024</a> - conference on December 2024 in Milan, Italy.</li>
+</ul>
+
+<h3 id='upcoming_events'>Upcoming events</h3>
+
+<ul>
+<li><a href='https://www.ethdenver.com/'>ETHDenver</a> - yearly Ethereum event on February/March 2025 in Denver, United States.</li>
+
+<li><a href='https://zkproof.org/events/zkproof-7-sofia/'>ZKProof 7</a> - conference in March 2025 in Sofia, Bulgaria.</li>
+
+<li><a href='https://ethglobal.com/events/taipei'>ETHGlobal Taipei</a> - summit on April 2025 in Taipei, Taiwan.</li>
+
+<li><a href='https://worldblockchainsummit.com/dxb-oct-24/'>World Blockchain Summit 2025</a> - summit on April 2025 in Dubai, United Arab Emirates.</li>
+
+<li><a href='https://ethprague.com/'>EthPrague 2025</a> - conference on May 2025 in Prague, Czechia.</li>
+
+<li><a href='https://dappcon.io/#about'>DappCon 2025</a> - conference on June 2025 in Berlin, Germany.</li>
+
+<li><a href='https://ethcc.io/'>The Ethereum Community Conference 2025</a> - conference in June/July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/cannes'>ETHGlobal Cannes</a> - summit on July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/newyork2025'>ETHGlobal New York</a> - summit on August 2025 in New York, United States.</li>
+
+<li><a href='https://koreablockchainweek.com/'>Korea Blockchain Week 2025</a> - conference week on September 2025 in Seoul, South Korea.</li>
+
+<li><a href='https://ethglobal.com/events/newdelhi'>ETHGlobal New Delhi</a> - summit on September 2025 in New Delhi, India.</li>
+</ul>
+
+<h3 id='our_sponsors'>Our Sponsors</h3>
+
+<ul>
+<li><strong><a href='https://odra.dev'>Odra.dev</a></strong> - cutting-edge smart contract development tools for professionals with deadlines.</li>
+</ul>
+
+                <p>To become a sponsor mail us: contact@odra.dev. Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
+        </div>
+  </body>
+</html>
