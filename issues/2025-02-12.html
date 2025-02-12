@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>ZKNewsletter</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@odradev" />
+        <meta name="twitter:creator" content="@odradev" />
+        <meta property="og:url" content="https://zknewsletter.com" />
+        <meta property="og:title" content="ZK Newsletter for 2025/02/12" />
+        <meta property="og:description" content="Summary of the most important things, which happened in Zero Knowledge world, in the previous week." />
+        <meta property="og:image" content="https://zknewsletter.com/issues/2025-02-12-cover.png" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
+            .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: min(100vw, 728px);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
+            }
+
+            .header img {
+                max-width: 100%;
+            }
+
+            .substack-frame {
+                grid-area: frame-item;
+                justify-self: stretch;
+                background:white;
+                height: 100pt;
+            }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="/full_logo.png"></img>
+                <p>Stay in the loop with our Zero Knowledge Newsletter - Your weekly roundup of the latest news, developments, breakthroughs, and innovations in the world of zero knowledge.</p>
+            </div>
+            <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2025/02/12</h1>
+                <img src="/issues/2025-02-12-cover.png"></img>
+            </div>
+            
+            <div class="post-content">
+                <p>If you like us are interested in how AI gets its way into software development, you might be interested in our new newsletter: <a href='https://codegen.substack.com/p/codegen-news-for-2025-02-11'>CodeGen New</a>.</p>
+
+<h3 id='top_picks'>Top picks</h3>
+
+<ul>
+<li><a href='https://www.youtube.com/watch?v=HUaYO68vqkQ'>Securing AI Agents with Multi-Party Computation w/ David Lachmish</a>. (06.02.2025)</li>
+
+<li><a href='https://blog.icme.io/zk-prover-networks-want-your-data-dont-give-it-to-them-2/'>If A &#8217;ZK&#8217;-Prover Network Asks For Your Data. Don’t Give It to Them.</a> - article by Wyatt Benno. (06.02.2025)</li>
+
+<li>
+<p><a href='https://eprint.iacr.org/2025/169.pdf'>Efficient Pseudorandom Correlation Generators for Any Finite Field</a> - academic text by Zhe Li, Chaoping Xing, Yizhou Yao and Chen Yuan. (07.02.2025)</p>
+
+<h3 id='reading_materials'>Reading materials</h3>
+</li>
+
+<li><a href='https://blog.icme.io/zk-prover-networks-want-your-data-dont-give-it-to-them-2/'>If A &#8217;ZK&#8217;-Prover Network Asks For Your Data. Don’t Give It to Them.</a> - article by Wyatt Benno. (06.02.2025)</li>
+
+<li><a href='https://arxiv.org/pdf/2502.03773'>ExpProof : Operationalizing Explanations for Confidential Models with ZKPs</a> - academic text by Chhavi Yadav, Evan Monroe Laufer, Dan Boneh and Kamalika Chaudhuri. (06.02.2025)</li>
+
+<li><a href='https://kaijuneer.medium.com/fri-polynomial-commitment-with-code-walkthrough-ca5e4b4b2b3d'>FRI Polynomial Commitment With Code Walkthrough</a> - article by Kai Jun Eer. (09.02.2025)</li>
+
+<li><a href='https://arxiv.org/pdf/2502.07063'>Zero-Knowledge Proof Frameworks: A Survey</a> - academic text by Nojan Sheybani, Anees Ahmed, Michel Kinsy and Farinaz Koushanfar. (10.02.2025)</li>
+
+<li><a href='https://arxiv.org/pdf/2502.06425'>Generating Privacy-Preserving Personalized Advice with Zero-Knowledge Proofs and LLMs</a> - academic text by Hiroki Watanabe and Motonobu Uchikoshi. (10.02.2025)</li>
+
+<li><a href='https://medium.com/@aannkkiittaa/understanding-fri-polynomial-commitments-scheme-7391da74c9d9'>Understanding FRI Polynomial Commitments Scheme</a> - article by Ankita Singh. (10.02.2025)</li>
+
+<li><a href='https://arxiv.org/pdf/2502.07594'>Distributed Non-Interactive Zero-Knowledge Proofs</a> - academic text by Alex B. Grilo, Ami Paz and Mor Perry. (11.02.2025)</li>
+
+<li><a href='https://blog.ezkl.xyz/post/sentiment/'>Automating Risk Assessment in DeFi: A Case Study with Sentiment Protocol</a> - article by EZKL. (11.02.2025)</li>
+
+<li>
+<p><a href='https://medium.com/l2beat/da-bridges-and-alt-da-trust-assumptions-6a00c6f40b10'>DA bridges and Alt-DA trust assumptions</a> - article by Vincenzo Furcillo. (11.02.2025)</p>
+
+<h3 id='watching_materials'>Watching materials</h3>
+</li>
+
+<li><a href='https://www.youtube.com/watch?v=HUaYO68vqkQ'>Securing AI Agents with Multi-Party Computation w/ David Lachmish</a>. (06.02.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=vpSgHNPx2D8'>Explore Expander Bootcamp Office Hours: zkML</a>. (10.02.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=VhoGeCY4i5M'>DAY 2 - 4:25 - Trustless Attestation Service for TEEs with Zero-Knowledge Proofs</a>. (11.02.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=sY59YE-ux1Q'>Mova And OvaL</a>. (11.02.2025)</li>
+</ul>
+
+<h3 id='listening_materials'>Listening materials</h3>
+
+<ul>
+<li><a href='https://zeroknowledge.fm/podcast/347/'>Zero Knowledge Podcast</a> episode - <em>Back to the Future with Zero Knowledge</em>. (05.02.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=xF1dK9A3e7M'>Expansion Podcast</a> episode - <em>Ethereum Interop, L2 Pain Points, and Celestia’s Inflation | Roundup</em>. (07.02.2025)</li>
+</ul>
+
+<h3 id='mpc'>MPC</h3>
+
+<ul>
+<li><a href='https://eprint.iacr.org/2025/177.pdf'>On the Power of Sumcheck in Secure Multiparty Computation</a> - Zhe Li, Chaoping Xing, Yizhou Yao and Chen Yuan. (07.02.2025)</li>
+
+<li>
+<p><a href='https://eprint.iacr.org/2025/169.pdf'>Efficient Pseudorandom Correlation Generators for Any Finite Field</a> - academic text by Zhe Li, Chaoping Xing, Yizhou Yao and Chen Yuan. (07.02.2025)</p>
+
+<h3 id='updates_of_zk_projects'>Updates of ZK projects</h3>
+</li>
+
+<li><a href='https://taiko.mirror.xyz/SGqEPPMGDX47s2ix9YsyPtq5KnUQcQ_7Gsha-gQGXTc'>Taiko Alethia: The New Name of Our Mainnet</a>. (06.02.2025)</li>
+
+<li><a href='https://minaprotocol.com/blog/minas-zkml-library-developer-guide'>Introducing Mina’s zkML Library: Developer Guide to Verifiable, Privacy-Preserving AI Inference</a>. (06.02.2025)</li>
+
+<li><a href='https://medium.com/@ingonyama/introducing-icicle-stwo-a-gpu-accelerated-stwo-prover-550b413d4f88'>Ingonyama - Introducing ICICLE-Stwo: A GPU-Accelerated Stwo Prover</a>. (07.02.2025)</li>
+
+<li><a href='https://www.fermah.xyz/blog-posts/jolt-x-fermah'>Fermah Generates Proofs for a16z’s Jolt</a>. (10.02.2025)</li>
+
+<li><a href='https://www.blog.citrea.xyz/citrea-bitvm-bitcoin-bridge-clementine-latest-design/'>Citrea&#8217;s BitVM-Based Bitcoin Bridge - Clementine&#8217;s Latest Design</a>. (10.02.2025)</li>
+
+<li>
+<p><a href='https://mantanetwork.medium.com/achieving-fast-finality-on-manta-network-a-dual-layer-approach-84f1ee74375b'>Manta - Achieving Fast Finality on Manta Network: A Dual-Layer Approach</a>. (11.02.2025)</p>
+
+<h3 id='upcoming_events'>Upcoming events</h3>
+</li>
+
+<li><a href='https://www.ethdenver.com/'>ETHDenver</a> - yearly Ethereum event on February/March 2025 in Denver, United States.</li>
+
+<li><a href='https://zkproof.org/events/zkproof-7-sofia/'>ZKProof 7</a> - conference in March 2025 in Sofia, Bulgaria.</li>
+
+<li><a href='https://ethglobal.com/events/taipei'>ETHGlobal Taipei</a> - summit on April 2025 in Taipei, Taiwan.</li>
+
+<li><a href='https://worldblockchainsummit.com/dxb-oct-24/'>World Blockchain Summit 2025</a> - summit on April 2025 in Dubai, United Arab Emirates.</li>
+
+<li><a href='https://ethprague.com/'>EthPrague 2025</a> - conference on May 2025 in Prague, Czechia.</li>
+
+<li><a href='https://dappcon.io/#about'>DappCon 2025</a> - conference on June 2025 in Berlin, Germany.</li>
+
+<li><a href='https://ethcc.io/'>The Ethereum Community Conference 2025</a> - conference in June/July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/cannes'>ETHGlobal Cannes</a> - summit on July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/newyork2025'>ETHGlobal New York</a> - summit on August 2025 in New York, United States.</li>
+
+<li><a href='https://koreablockchainweek.com/'>Korea Blockchain Week 2025</a> - conference week on September 2025 in Seoul, South Korea.</li>
+
+<li><a href='https://ethglobal.com/events/newdelhi'>ETHGlobal New Delhi</a> - summit on September 2025 in New Delhi, India.</li>
+</ul>
+
+<h3 id='our_sponsors'>Our Sponsors</h3>
+
+<ul>
+<li><strong><a href='https://odra.dev'>Odra.dev</a></strong> - cutting-edge smart contract development tools for professionals with deadlines.</li>
+</ul>
+
+                <p>To become a sponsor mail us: contact@odra.dev. Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
+        </div>
+  </body>
+</html>
