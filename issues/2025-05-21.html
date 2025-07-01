@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>ZKNewsletter</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@odradev" />
+        <meta name="twitter:creator" content="@odradev" />
+        <meta property="og:url" content="https://zknewsletter.com" />
+        <meta property="og:title" content="ZK Newsletter for 2025/05/21" />
+        <meta property="og:description" content="Summary of the most important things, which happened in Zero Knowledge world, in the previous week." />
+        <meta property="og:image" content="https://zknewsletter.com/issues/2025-05-21-cover.png" />
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@380&family=Roboto+Mono:wght@400&display=swap');
+
+            :root {
+               --font-color: rgb(64, 64, 64);
+            }
+
+            a {
+                color: var(--font-color);
+            }
+
+            .container {
+                color: var(--font-color);
+                font-family: 'Open Sans', sans-serif;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: min(100vw, 728px);
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "frame-item"
+                    "post-header"
+                    "post-item"
+                    "footer"
+            }
+
+            .header {
+                grid-area: header;
+                justify-self: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+            
+            .header h1 {
+                text-align: center;
+                font-size: min(11vw, 50pt);
+            }
+
+            .header p {
+                text-align: center;
+                font-size: 20pt;
+            }
+
+            .header img {
+                max-width: 100%;
+            }
+
+            .substack-frame {
+                grid-area: frame-item;
+                justify-self: stretch;
+                background:white;
+                height: 100pt;
+            }
+
+            .post-header {
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-header img {
+                max-width: 100%;
+            }
+
+            .post-content {
+                grid-area: post-item;
+                justify-self: stretch;
+                font-size: 14pt;
+            }
+
+            .post-content h3 {
+                padding-left: 8pt;
+                font-size: 18pt;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            .post-content li:not(:last-child) { 
+               margin-bottom: 10pt;  
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="/full_logo.png"></img>
+                <p>Stay in the loop with our Zero Knowledge Newsletter - Your weekly roundup of the latest news, developments, breakthroughs, and innovations in the world of zero knowledge.</p>
+            </div>
+            <iframe class="substack-frame" src="https://zknewsletter.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+            <div class="post-header">
+                <h1>Issue - 2025/05/21</h1>
+                <img src="/issues/2025-05-21-cover.png"></img>
+            </div>
+            
+            <div class="post-content">
+                <h3 id='top_picks'>Top picks</h3>
+
+<ul>
+<li><a href='https://zeroknowledge.fm/podcast/361/'>Zero Knowledge Podcast</a> episode - <em>Implementing LatticeFold with Matthew and Albert from Nethermind</em>. (14.05.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=h7Bzeu__pos'>Verifiable compute is eating the world - Presentation by Wyatt Benno, Core Contributor at NovaNet</a>. (13.05.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=xsh3q8d0LZw'>Building a Bitcoin dApp- Broly Demo and Dev Libraries | Starknet</a>. (18.05.2025)</li>
+
+<li><a href='https://solana.com/validated/episodes/self-custody-no-seed-phrase-w-ouriel-ohayon-zengo'>Self-Custody. No Seed Phrase. w/ Ouriel Ohayon (Zengo)</a>. (20.05.2025)</li>
+</ul>
+
+<h3 id='reading_materials'>Reading materials</h3>
+
+<ul>
+<li><a href='https://arxiv.org/pdf/2505.08114'>Valida ISA Spec, version 1.0: A zk-Optimized Instruction Set Architecture</a> - academic text by Morgan Thomas, Mamy Ratsimbazafy, Marcin Bugaj, Lewis Revill, Carlo Modica, Sebastian Schmidt, Ventali Tan, Daniel Lubarov, Max Gillett and Wei Dai. (12.05.2025)</li>
+
+<li><a href='https://medium.com/@CFrontier_Labs/finite-field-arithmetic-optimization-ab449202c776'>Finite Field Arithmetic Optimization</a> - article by Frontier Labs. (18.05.2025)</li>
+
+<li><a href='https://arxiv.org/pdf/2505.07997'>FairZK: A Scalable System to Prove Machine Learning Fairness in Zero-Knowledge</a> - academic text by Tianyu Zhang, Shen Dong, O. Deniz Kose, Yanning Shen, Yupeng Zhang. (18.05.2025)</li>
+
+<li><a href='https://medium.com/@Gateway.FM/comparing-optimistic-or-zk-rollup-technologies-and-their-ideal-applications-2c683a6f1288'>Comparing Optimistic or ZK Rollup Technologies and Their Ideal Applications</a> - article by Gateway.FM. (19.05.2025)</li>
+
+<li><a href='https://medium.com/l2beat/native-rollups-where-they-are-and-where-they-are-going-cb21eb103d46'>Native Rollups: Where they are, and where they are going</a> - article by Luca Donno. (19.05.2025)</li>
+
+<li><a href='https://medium.com/@0xlipefe/reed-solomon-fingerprint-reed-solomon-encoding-low-degree-extension-and-lagrange-interpolation-0f2a7d471da7'>Reed Solomon Fingerprint, Reed Solomon Encoding, Low Degree Extension and Lagrange Interpolation: First Steps from Maths to Magics [PART II]</a> - article by Lipefe. (19.05.2025)</li>
+</ul>
+
+<h3 id='watching_materials'>Watching materials</h3>
+
+<ul>
+<li><a href='https://www.youtube.com/watch?v=h7Bzeu__pos'>Verifiable compute is eating the world - Presentation by Wyatt Benno, Core Contributor at NovaNet</a>. (13.05.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=xsh3q8d0LZw'>Building a Bitcoin dApp- Broly Demo and Dev Libraries | Starknet</a>. (18.05.2025)</li>
+
+<li>
+<p><a href='https://www.youtube.com/watch?v=prPEqRSbiBU'>Presentation by Daniel Kwak, LazAI: A Hidden Crisis in AI - The Data Alignment Problem</a>. (19.05.2025)</p>
+
+<h3 id='listening_materials'>Listening materials</h3>
+</li>
+
+<li><a href='https://zeroknowledge.fm/podcast/361/'>Zero Knowledge Podcast</a> episode - <em>Quantum Engineering with Jelena Vučković</em>. (14.05.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=2-wE_4-CBDE'>Panel 5: The ZKML Stack – What&#8217;s Missing?</a>. (14.05.2025)</li>
+
+<li><a href='https://www.youtube.com/watch?v=G5tE0LFFiTY'>Logan Allen: Nockchain&#8217;s Global Competition for Useful ZK Proof of Work Miners Kicks Off</a>. (19.05.2025)</li>
+
+<li><a href='https://solana.com/validated/episodes/self-custody-no-seed-phrase-w-ouriel-ohayon-zengo'>Self-Custody. No Seed Phrase. w/ Ouriel Ohayon (Zengo)</a>. (20.05.2025)</li>
+</ul>
+
+<h3 id='mpc'>MPC</h3>
+
+<ul>
+<li><a href='https://eprint.iacr.org/2025/864.pdf'>Fheanor: a new, modular FHE library for designing and optimising schemes</a> - academic text by Hiroki Okada, Rachel Player and Simon Pohmann. (16.05.2025)</li>
+
+<li>
+<p><a href='https://eprint.iacr.org/2025/894.pdf'>Achieving &quot;beyond CCA1&quot; security for linearly homomorphic encryption, without SNARKs?</a> - academic text by Marina Checri, Pierre-Emmanuel Clet, Marc Renard and Renaud Sirdey. (20.05.2025)</p>
+
+<h3 id='updates_of_zk_projects'>Updates of ZK projects</h3>
+</li>
+
+<li><a href='https://minaprotocol.com/blog/securely-issuing-tokenized-assets-using-zero-knowledge-proofs'>Mina - Securely Issuing Tokenized Assets Using Zero Knowledge Proofs</a>. (14.05.2025)</li>
+
+<li><a href='https://www.fermah.xyz/blog-posts/fermah-x-reclaim'>Fermah x Reclaim: Private zkTLS with Confidential Proving Delegation</a>. (14.05.2025)</li>
+
+<li><a href='https://risczero.com/blog/making-real-time-proving-accessible'>Risc0 - Making Real-Time Proving Accessible</a>. (19.05.2025)</li>
+
+<li>
+<p><a href='https://www.theblock.co/post/354970/paradigm-backed-succinct-prove-token'>Paradigm-backed Succinct to launch PROVE token as native asset for ZK prover network</a>. (20.05.2025)</p>
+
+<h3 id='current_events'>Current events</h3>
+</li>
+
+<li><a href='https://hodlsummit.com/dubai2025/'>World Blockchain Summit 2025</a> - summit on May 2025 in Dubai, United Arab Emirates.</li>
+</ul>
+
+<h3 id='upcoming_events'>Upcoming events</h3>
+
+<ul>
+<li><a href='https://ethprague.com/'>EthPrague 2025</a> - conference on May 2025 in Prague, Czechia.</li>
+
+<li><a href='https://dappcon.io/#about'>DappCon 2025</a> - conference on June 2025 in Berlin, Germany.</li>
+
+<li><a href='https://ethcc.io/'>The Ethereum Community Conference 2025</a> - conference in June/July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/cannes'>ETHGlobal Cannes</a> - summit on July 2025 in Cannes, France.</li>
+
+<li><a href='https://ethglobal.com/events/newyork2025'>ETHGlobal New York</a> - summit on August 2025 in New York, United States.</li>
+
+<li><a href='https://koreablockchainweek.com/'>Korea Blockchain Week 2025</a> - conference week on September 2025 in Seoul, South Korea.</li>
+
+<li><a href='https://ethglobal.com/events/newdelhi'>ETHGlobal New Delhi</a> - summit on September 2025 in New Delhi, India.</li>
+</ul>
+
+<h3 id='our_sponsors'>Our Sponsors</h3>
+
+<ul>
+<li><strong><a href='https://odra.dev'>Odra.dev</a></strong> - cutting-edge smart contract development tools for professionals with deadlines.</li>
+</ul>
+
+<p>Check out also our other Newsletter - <a href='https://codegen.substack.com/p/codegen-news-for-2025-04-01'>CodeGen News</a>.</p>
+
+                <p>To become a sponsor mail us: contact@odra.dev. Much more is available in our <a href="https://github.com/odradev/awesome-zero-knowledge"><b>Awesome Zero Knowledge repository</b></a>. Don't be a stranger, leave us a star.</p>
+            </div>
+            <div class="footer">
+                <p>by <a href="https://odra.dev">odra.dev</a></p>
+            </div>
+        </div>
+  </body>
+</html>
